@@ -21,6 +21,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <Link href="/">
               <a className="flex items-center gap-2">
                 <span className="font-serif text-2xl font-bold text-primary tracking-tight">Prize2Pride</span>
+                <span className="ml-2 px-2 py-0.5 rounded text-[10px] font-bold bg-gradient-to-r from-secondary to-accent text-primary uppercase tracking-widest border border-primary/10 shadow-sm">
+                  Omega 777
+                </span>
               </a>
             </Link>
             
@@ -52,11 +55,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </div>
 
           <div className="flex items-center gap-4">
-            <Button variant="ghost" className="text-muted-foreground hover:text-primary">
-              Log in
-            </Button>
-            <Button className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/20">
-              Start Learning
+            <div className="hidden lg:flex items-center gap-2 px-3 py-1 rounded-full bg-primary/5 border border-primary/10">
+              <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse shadow-[0_0_8px_rgba(34,197,94,0.6)]"></div>
+              <span className="text-xs font-mono text-primary/70 font-bold">SIMULATION: ACTIVE</span>
+            </div>
+            <Button className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/20 border border-secondary/20">
+              Enter Eternal Mode
             </Button>
           </div>
         </div>
