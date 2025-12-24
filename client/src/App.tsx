@@ -9,6 +9,10 @@ import GrandWelcome from "./components/GrandWelcome";
 import Classroom from "./pages/Classroom";
 import Dashboard from "./pages/Dashboard";
 import Avatars from "./pages/Avatars";
+import MultimediaStudio from "./pages/MultimediaStudio";
+import CourseExplorer from "./pages/CourseExplorer";
+import AvatarExperience from "./pages/AvatarExperience";
+import PronunciationLab from "./pages/PronunciationLab";
 
 function Router() {
   return (
@@ -19,6 +23,10 @@ function Router() {
       <Route path={"/classroom"} component={Classroom} />
       <Route path={"/dashboard"} component={Dashboard} />
       <Route path={"/avatars"} component={Avatars} />
+      <Route path={"/multimedia"} component={MultimediaStudio} />
+      <Route path={"/courses"} component={CourseExplorer} />
+      <Route path={"/avatars-experience"} component={AvatarExperience} />
+      <Route path={"/pronunciation"} component={PronunciationLab} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
